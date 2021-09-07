@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f4805ebd0f.js" crossorigin="anonymous"></script>
+
+    <title>CRUD SYSTEM</title>
+</head>
+
+<body>
+
+    
+
+    <div class="container w-50 shadow my-5 p-5">
+        <h1>CRUD system</h1>
+
+
+
+
+        <label for="productName">productName:</label>
+        <input type="text" class="form-control" id="productName">
+
+
+
+        <label for="">productCategory:</label>
+        <input type="text" class="form-control" id="productCategory">
+        <label for="">productPrice:</label>
+        <input type="text" class="form-control" id="productPrice">
+        <label for="">productDescription:</label>
+        <textarea id="productDescription" class="form-control"></textarea>
+
+
+        <button class="btn btn-outline-info mt-3" id="addProductBtn" onclick="addProduct()">add product</button>
+        <button class="btn btn-outline-info mt-3" onclick="clearProduct()">clear</button>
+
+
+    </div>
+
+
+
+    <input type="text" placeholder="search..." class="form-control w-25 mx-auto" id="searchInput" onkeyup="serachProduct()">
+
+    <table class="table container mt-5">
+        <thead>
+            <tr>
+                <th>index:</th>
+                <th>name:</th>
+                <th>category:</th>
+                <th>price:</th>
+                <th>description:</th>
+                <th>update:</th>
+                <th>delete:</th>
+            </tr>
+        </thead>
+        <tbody id="showProduct" class=" fs-5">
+            <!-- <tr>
+                <td>64646</td>
+                <td>iphone</td>
+                <td>mobile</td>
+                <td>545454</td>
+                <td>excellent</td>
+                <td>
+                    <button class="btn btn-secondary" value="">
+                        <i class="fas fa-edit"></i>
+
+                    </button>
+                </td>
+                <td>
+                    <button class="btn btn-danger">
+
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </td>
+
+            </tr> -->
+
+        </tbody>
+    </table>
+
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="code.js"></script>
+</body>
+
+</html>
