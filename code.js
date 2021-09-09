@@ -140,5 +140,9 @@ function editProduct(i) {
     localStorage.setItem('allProduct',JSON.stringify(productContainer));
     displayProducts();
     clearProduct();
+    document.getElementById('addProductBtn').innerHTML= 'Add Product';
+    document.getElementById('addProductBtn').setAttribute('onclick',`editProduct(${i})`)
+    document.getElementById('addProductBtn').setAttribute('class',"btn btn-secondary mt-3")
+
 }
 
