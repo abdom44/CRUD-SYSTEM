@@ -141,8 +141,8 @@ function editProduct(i) {
     displayProducts();
     clearProduct();
     document.getElementById('addProductBtn').innerHTML= 'Add Product';
-    document.getElementById('addProductBtn').setAttribute('onclick',`editProduct(${i})`)
-    document.getElementById('addProductBtn').setAttribute('class',"btn btn-secondary mt-3")
+    document.getElementById('addProductBtn').setAttribute('onclick',`addProduct()`)
+    document.getElementById('addProductBtn').setAttribute('class',"btn btn-outline-info mt-3")
 
 }
 
